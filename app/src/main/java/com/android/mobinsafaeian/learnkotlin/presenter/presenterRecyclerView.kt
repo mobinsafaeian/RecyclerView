@@ -11,11 +11,11 @@ class presenterRecyclerView {
         this.listItems = listItems
     }
 
-    public fun onBindRecyclerView(position:Int , holder: itemView){
+    fun onBindRecyclerView(position:Int , holder: itemView){
         item = listItems[position]
         holder.setItemText(item.itemName)
     }
-    public fun getRecyclerViewItemSize():Int {
+    fun getRecyclerViewItemSize():Int {
         return listItems.size
     }
 

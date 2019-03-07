@@ -26,12 +26,18 @@ class MainActivity : AppCompatActivity() {
         initRecyclerView()
     }
 
+    /**
+     * initialize recyclerView
+     */
     private fun initRecyclerView() {
         for (i in 1..25)
              listItems.add(ListItem("item $i"))
         adapter.notifyDataSetChanged()
     }
 
+    /**
+     * initializations
+     */
     private fun init() {
         listItems = ArrayList()
         presenter = presenterRecyclerView(listItems)
